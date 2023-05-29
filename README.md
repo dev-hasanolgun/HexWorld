@@ -1,12 +1,21 @@
-# HexWorld
-This project is an implementation of an endless hex tile world generation system in Unity. It utilizes chunk loading/unloading system for efficient rendering and optimization, as well as a pathfinding algorithm for navigating the generated world using Unity's DOTS. The project aims to provide a foundation for creating vast and procedurally generated hex tile-based environments.
+<h1> HexWorld </h1>
+<h3> This project is an implementation of an endless hex tile world generation system in Unity. It utilizes chunk loading/unloading system for efficient rendering and optimization, as well as a pathfinding algorithm for navigating the generated world using Unity's DOTS. The project aims to create vast and procedurally generated hex tile-based environments. </h3> <hr>
 
-![seedGif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Seed.gif)
-![frequencyGif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Frequency.gif)
-![loadDistanceGif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/LoadDistance.gif)
-![chunkLoadingGif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ChunkLoading.gif)
-![chunkUnloadingGif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ChunkUnloading.gif)
-![obstacleFloodFillGif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ObstacleFloodFill.gif)
-![obstacleNoiseBasedFillGif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ObstacleNoiseBasedFill.gif)
-![pathfinding1Gif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Pathfinding1.gif)
-![pathfinding2Gif](https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Pathfinding2.gif)
+# Seed & Frequency
+<h2> Using the seed value, you can generate different variations of the world. <br> <br> Tweaking the noise frequency allows you to control the level of detail and the overall visual appearance of the generated world. </h2>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Seed.gif" width="500" height="500" align="left"/> 
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Frequency.gif" width="500" height="500" align="left"/> <br clear="left"/> <hr>
+<h1> Chunk Loading / Unloading & Distance </h1>
+<h2> By adjusting the chunk load distance, you can balance performance and visual quality, ensuring that only relevant chunks are loaded based on the player's position and chunks outside this distance are unloaded. </h2>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/LoadDistance.gif" width="333" height="333" align="left"/>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ChunkLoading.gif" width="333" height="333" align="left"/>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ChunkUnloading.gif" width="333" height="333" align="left"/> <br clear="left"/> <hr>
+<h1> Obstacle Placement </h1>
+<h2> Utilizing the FloodFill algorithm, you can dynamically and procedurally generate realistic and varied obstacle layouts as well as using a simple noise map for obstacle placement. </h2>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ObstacleFloodFill.gif" width="500" height="500" align="left"/>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/ObstacleNoiseBasedFill.gif" width="500" height="500" align="left"/> <br clear="left"/> <hr>
+<h1> Pathfinding </h1>
+<h2> The combination of A* and Flowfield pathfinding techniques provides an efficient and dynamic solution for navigating entities in a hex tile world. </h2>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Pathfinding1.gif" width="500" height="500" align="left"/>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Pathfinding2.gif" width="500" height="500" align="left"/> <br clear="left"/>
+
