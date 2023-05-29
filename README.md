@@ -3,8 +3,8 @@
 
 # Seed & Frequency
 <h2> Using the seed value, you can generate different variations of the world. <br> <br> Tweaking the noise frequency allows you to control the level of detail and the overall visual appearance of the generated world. </h2>
-<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Seed.gif" width="300" height="300" align="left"/> 
-<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Frequency.gif" width="300" height="300" align="left"/> <br clear="left"/> <hr>
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Seed.gif" width="400" height="400" align="left"/> 
+<img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/Frequency.gif" width="400" height="400" align="left"/> <br clear="left"/> <hr>
 <h1> Chunk Loading / Unloading & Distance </h1>
 <h2> By adjusting the chunk load distance, you can balance performance and visual quality, ensuring that only relevant chunks are loaded based on the player's position and chunks outside this distance are unloaded. </h2>
 <img src="https://github.com/dev-hasanolgun/HexWorld/blob/main/Gifs/LoadDistance.gif" width="333" height="333" align="left"/>
