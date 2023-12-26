@@ -28,24 +28,24 @@ public class PathfindingTest : MonoBehaviour
         WorldMapController.UnloadChunksInRange(transform);
         WorldMapController.LoadChunksInRange(transform);
         
-        // var targetTile = HighlightTile();
-        // if (targetTile != _currentTargetTile)
-        // {
-        //     if (TryGetPath(targetTile, out var path))
-        //     {
-        //         _path = path.ToList();
-        //         HighlightPath(_path);
-        //     }
-        //     
-        //     path.Dispose();
-        // }
-        //
-        // if (Input.GetMouseButtonDown(0) && !_isMoving)
-        // {
-        //     StartCoroutine(MoveAlongPath(_path));
-        // }
-        //
-        // _currentTargetTile = targetTile;
+        var targetTile = HighlightTile();
+        if (targetTile != _currentTargetTile)
+        {
+            if (TryGetPath(targetTile, out var path))
+            {
+                _path = path.ToList();
+                HighlightPath(_path);
+            }
+            
+            path.Dispose();
+        }
+        
+        if (Input.GetMouseButtonDown(0) && !_isMoving)
+        {
+            StartCoroutine(MoveAlongPath(_path));
+        }
+        
+        _currentTargetTile = targetTile;
     }
 
     public Hex3 HighlightTile()
